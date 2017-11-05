@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:src="@drawable/file_down_load_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <TextView
+            android:id="@+id/tv_show_down_load_file_from_manager"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="显示文件名"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_show_down_load_file"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:src="@drawable/down_load_from_manager"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_file_system_time"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="8dp"
+        android:text="显示时间"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

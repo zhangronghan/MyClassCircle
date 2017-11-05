@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.jia.classcircle.activity.util.ImageViewPlus
+
+            android:id="@+id/imageViewPlus"
+            android:layout_margin="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+             android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_user_classMates_name"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="姓名"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/tv_user_classMates_identity"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="身份"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

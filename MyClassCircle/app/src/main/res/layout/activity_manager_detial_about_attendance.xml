@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.jia.classcircle.activity.activity.ManagerDetailAboutAttendanceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_create_attendance"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:title="编辑考勤"
+        app:titleTextColor="#ffffff"
+        android:background="#3399FF"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppToolbarPopupTheme"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_manager_show_today"
+                android:layout_gravity="center_vertical"
+                android:text="展示今天日期"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_manager_show_week"
+                android:layout_gravity="center_vertical"
+                android:text="星期几"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <EditText
+            android:id="@+id/edt__manager_attendance_content"
+            android:textSize="18dp"
+            android:text="自习考勤/上课考勤"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_manager_sure_attendance"
+        android:layout_margin="5dp"
+        android:background="@drawable/login_button_selector"
+        android:text="确认考勤"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

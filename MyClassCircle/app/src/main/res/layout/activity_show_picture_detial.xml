@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photo_layout"
+    android:orientation="vertical"
+    tools:context="com.example.jia.classcircle.activity.activity.ShowPictureDetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_photo_detail_show"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center_vertical"
+        android:background="#423737"
+        android:gravity="center_vertical"
+        app:popupTheme="@style/AppToolbarPopupTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="班级相册"
+        app:titleTextColor="#ffffff"
+        />
+    <TextView
+        android:id="@+id/tv_indicator"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:text="aaa"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.jia.classcircle.activity.util.MyPhotoViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewpagerPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<!--    <Button
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_delete_photo"
+        android:background="@drawable/login_button_selector"
+        android:text="删除该照片"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />-->
+</LinearLayout>

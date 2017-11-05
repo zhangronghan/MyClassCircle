@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_vote_create"
+        android:title="创建活动"
+        />
+
+    <item android:id="@+id/item_vote_delete"
+          android:title="删除活动"
+        />
+
+</menu>

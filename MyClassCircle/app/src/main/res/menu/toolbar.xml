@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="搜索"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/ic_scan_item"
+        android:title="扫一扫"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/ic_create"
+        android:title="创建班级"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/light_mode"
+        android:icon="@drawable/ic_light"
+        android:title="调整亮度"
+        app:showAsAction="never"
+        />
+</menu>

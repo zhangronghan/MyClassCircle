@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppToolbarPopupTheme" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>
+    </style>
+
+<style name="AppDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+    <item name="android:showDividers">middle</item>
+    <item name="android:divider">@drawable/line</item>
+    <item name="android:dividerHeight">1dp</item>
+</style>
+
+</resources>

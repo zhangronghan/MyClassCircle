@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/MyLinearLayout"
+              tools:context="com.example.jia.classcircle.activity.activity.StudentUpLoadDataActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_up_load_data"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center_vertical"
+        android:background="#3399FF"
+        android:gravity="center_vertical"
+        app:popupTheme="@style/AppToolbarPopupTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="上传资料"
+        app:titleTextColor="#ffffff"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="文件路径:"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tv_stu_up_data_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:textSize="17dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <Button
+            android:id="@+id/img_file_url_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#5e5e5e"
+            android:text="上传文件"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"/>
+
+
+        <Button
+            android:id="@+id/img_up_load_data"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="上传"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

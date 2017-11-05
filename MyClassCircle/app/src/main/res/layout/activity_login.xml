@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_background"
+    tools:context="com.example.jia.classcircle.activity.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_background"
+            android:hint="请输入登录名称"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"/>
+
+        <EditText
+            android:id="@+id/edt_account_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/edittext_background"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#9f9f9f"
+            android:enabled="false"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <!--#9f9f9f-->
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="30dp"
+            android:text="注册账号"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stu_by_check"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_show_stuName_attendance"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:text="考勤名字"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/tv_stu_if_attendance_result"
+            android:text="已签到/未签到"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_show_stu_attendance_system_time"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="8dp"
+        android:text="显示时间"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

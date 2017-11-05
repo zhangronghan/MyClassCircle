@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.jia.classcircle.activity.activity.SharePhotoActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sharePhoto"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:title="班级相册"
+        app:titleTextColor="#ffffff"
+        android:background="#3399FF"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppToolbarPopupTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+        <com.youth.banner.Banner
+            android:layout_marginBottom="5dp"
+            android:id="@+id/banner_showPhoto"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </com.youth.banner.Banner>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_talk_about_photo"
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/edt_talk_about_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/login_button_selector"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>
